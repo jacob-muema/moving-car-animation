@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Suv Car Animation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="starsPlaceholder"></div>
+  <div class="background">
+    <div class="cloudContainer">
+      <div class="clouds cloud1"></div>
+      <div class="clouds cloud3"></div>
+      <div class="clouds cloud4"></div>
+      <div class="clouds cloud5"></div>
+      <div class="clouds cloud6"></div>
+      <div class="clouds cloud7"></div>
+    </div>
+  </div>
+  <div class="sunAndMoon"><svg xmlns="http://www.w3.org/2000/svg" width="120" height="124" viewBox="1259 92 120 124"><ellipse cx="1318.548" cy="153.846098" fill="#FFE66D" fill-rule="evenodd" rx="59.5480002" ry="61.8460978"/></svg></div>
+  <div class="hills"></div>
+  <div class="road"></div>
+  <div class="jeep">
+    <svg class="vehicleBody" xmlns="http://www.w3.org/2000/svg" width="475" height="165" viewbox="-1 -5 475 165" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <path id="path-1" d="M0 137h26v9H0z"></path>
+        <mask id="mask-2" width="28" height="11" x="-1" y="-1">
+          <path fill="#fff" d="M-1 136h28v11H-1z"></path>
+          <use xlink:href="#path-1"></use>
+        </mask>
+        <path id="path-3" d="M45.0715585 128.803052l3.8264314-106.2970917S48.1457742-1.28153173 68.4183674.054221C88.6909605 1.38997375 260.984828.0253481 260.984828.0253481l42.568571 63.12153502 128.361431 14.32629 18.81527 47.2702989s18.793235-2.755085 18.793235 6.809451c0 9.564537.929253 21.810457-5.261711 21.810457-6.190963 0-19.312188-.429295-19.312188-.429295l-1.207344-27.408005-13.192648-22.159971h-69.124152l-33.484149 52.171858H171.313565l-.705554-15.446256-23.174323-34.765282H78.6402043L58.6198081 149.48529H25v-20.866211l20.0715585.183973z"></path>
+        <mask id="mask-4" width="452.572872" height="163.537967" x="-4" y="-4">
+          <path fill="#fff" d="M21-4h452.572872v163.537967H21z"></path>
+          <use xlink:href="#path-3"></use>
+        </mask>
+        <path id="path-5" d="M122.109894 16.1384934l50.055416-.0726432v47.4669773H75L75.7410838 16z"></path>
+        <mask id="mask-6" width="107.16531" height="57.5328275" x="-5" y="-5">
+          <path fill="#fff" d="M70 11h107.16531v57.5328275H70z"></path>
+          <use xlink:href="#path-5"></use>
+        </mask>
+        <path id="path-7" d="M197 17h60.351096l14.231848 26.4460737-6.779018.1992818v20.804573l-67.596054-.6633642z"></path>
+        <mask id="mask-8" width="84.5829442" height="57.4499285" x="-5" y="-5">
+          <path fill="#fff" d="M192 12h84.5829442v57.4499285H192z"></path>
+          <use xlink:href="#path-7"></use>
+        </mask>
+        <path id="path-9" d="M186 10.2620675h74.868375l28.165678 45.8905935v82.486369H205.03428s-17.87286 3.981323-17.87286-66.1184175c0-70.09974063-1.16142-62.258545-1.16142-62.258545z"></path>
+        <mask id="mask-10" width="109.034053" height="134.680455" x="-3" y="-3">
+          <path fill="#fff" d="M183 7h109.034053v134.680455H183z"></path>
+          <use xlink:href="#path-9"></use>
+        </mask>
+        <path id="path-11" d="M195 75l21.904052.2387363.47102 7.3750147h-22.312518z"></path>
+        <mask id="mask-12" width="24.375072" height="9.61375096" x="-1" y="-1">
+          <path fill="#fff" d="M194 74h24.375072v9.61375096H194z"></path>
+          <use xlink:href="#path-11"></use>
+        </mask>
+      </defs>
+      <g id="vehicleBody" fill="none" fill-rule="evenodd">
+        <g id="Rectangle-4">
+          <use fill="#565656" xlink:href="#path-1"></use>
+          <use stroke="#000" stroke-width="2" mask="url(#mask-2)" xlink:href="#path-1"></use>
+        </g>
+        <g id="Path-3">
+          <use fill="#890000" xlink:href="#path-3"></use>
+          <use stroke="#000" stroke-width="8" mask="url(#mask-4)" xlink:href="#path-3"></use>
+        </g>
+        <g id="Path-4">
+          <use fill="#D8D8D8" xlink:href="#path-5"></use>
+          <use stroke="#030303" stroke-width="10" mask="url(#mask-6)" xlink:href="#path-5"></use>
+        </g>
+        <g id="Path-5">
+          <use fill="#D8D8D8" xlink:href="#path-7"></use>
+          <use stroke="#030303" stroke-width="10" mask="url(#mask-8)" xlink:href="#path-7"></use>
+        </g>
+        <path id="Path-6" fill="#000" d="M46.4088849 53.2774657s-22.1529245-7.9266067-33.8538605.8744349C.8540885 62.9529423 5.30700672 147.991311 22.0174757 135.841991l22.5291548-9.032965 1.8622544-73.5315603z"></path>
+        <use id="Path-7" stroke="#000" stroke-width="6" mask="url(#mask-10)" xlink:href="#path-9"></use>
+        <use id="Path-8" stroke="#000" stroke-width="2" mask="url(#mask-12)" xlink:href="#path-11"></use>
+        <path id="Path-9" fill="#000" d="M330 152.732957l9.501058.16776s17.961677-73.1984723 94.734741-34.376408l17.38742 32.121319L433.017922 103l-75.932648.451663L330 152.732957z"></path>
+        <path id="Path-9-Copy" fill="#000" d="M49 152.732957l9.5010579.16776s17.9616773-73.1984723 94.7347411-34.376408l17.38742 32.121319L152.017922 103l-75.9326482.451663L49 152.732957z"></path>
+      </g>
+    </svg><img class="backWheel" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/549579/frontWheel.svg" alt="wheel"/><img class="frontWheel" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/549579/frontWheel.svg" alt="wheel"/>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

@@ -1,0 +1,224 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  background-color: #86bbd8;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.timeChange {
+  animation: timeChange 2s linear 1 forwards;
+}
+
+.cloudContainer {
+  top: 5%;
+  width: 100%;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+.clouds {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/549579/clouds.png);
+  background-size: 250%;
+  width: 10%;
+  height: 40%;
+}
+
+.cloud1 {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  animation: moveclouds 2500s linear infinite;
+}
+
+.cloud3 {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  animation: moveclouds 2000s linear infinite;
+}
+
+.cloud4 {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  animation: moveclouds 2300s linear infinite;
+}
+
+.cloud5 {
+  position: absolute;
+  top: 10%;
+  left: 55%;
+  animation: moveclouds 2800s linear infinite;
+}
+
+.cloud6 {
+  position: absolute;
+  top: 55%;
+  left: 65%;
+  animation: moveclouds 2500s linear infinite;
+}
+
+.cloud7 {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  animation: moveclouds 2500s linear infinite;
+}
+
+.starsPlaceholder {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+
+.stars {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/549579/stars.png);
+  animation: stars 2.5s linear forwards;
+}
+
+.sunAndMoon {
+  z-index: 10;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.clouds {
+  z-index: 2;
+}
+
+.hills {
+  z-index: 2;
+  position: absolute;
+  bottom: 80px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/549579/hlls.svg);
+  min-height: 250px;
+  width: 140%;
+  animation: hills 130s infinite;
+}
+
+.road {
+  min-height: 150px;
+  max-height: 250px;
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #343434;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/549579/roadLine.png);
+  background-position: 150% center;
+  background-repeat: no-repeat;
+  animation: road 1s infinite;
+}
+
+.jeep {
+  z-index: 4;
+  position: absolute;
+  bottom: 90px;
+  left: 100px;
+  opacity: 0.95;
+  animation: jeep 50s linear infinite forwards;
+}
+.jeep .vehicleBody {
+  position: relative;
+  top: 0;
+  z-index: 5;
+}
+.jeep .backWheel {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  animation: wheels 5s linear infinite;
+}
+.jeep .frontWheel {
+  position: absolute;
+  top: 100px;
+  left: 335px;
+  animation: wheels 5s linear infinite;
+}
+
+@keyframes road {
+  from {
+    background-position: 110% center;
+  }
+  to {
+    background-position: -125% center;
+  }
+}
+@keyframes wheels {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3600deg);
+  }
+}
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #343434;
+  opacity: 0.2;
+  z-index: 4;
+}
+
+.overlayContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+}
+
+@keyframes jeep {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(300px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes hills {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-1000px);
+  }
+}
+@keyframes moveclouds {
+  100% {
+    transform: translateX(-9500px);
+  }
+}
+@keyframes timeChange {
+  70% {
+    background-color: #86bbd8;
+  }
+  100% {
+    background-color: #2f3061;
+  }
+}
+@keyframes stars {
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
